@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Luna Nails Studio</title>
+  <meta name="theme-color" content="#f7efe3">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <style>
+    html,body{margin:0;height:100%;background:#f7efe3;font-family:Arial,sans-serif}
+    .wrap{height:100%;display:flex;flex-direction:column}
+    .bar{padding:8px 12px;text-align:center;background:#f7efe3;font-weight:700;color:#7b5a24}
+    iframe{border:0;width:100%;flex:1;background:white}
+    .fallback{padding:10px;text-align:center;font-size:14px}
+    a{color:#7b5a24;font-weight:700}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="bar">Luna Nails Studio</div>
+    <iframe src="https://script.google.com/macros/s/AKfycbwolpBlnBeiigvl4c7FS8hH96w1rchFKJMVlsaQPWga0neu7wEZbEtIJaJ48SMcRh84/exec" title="Luna Nails"></iframe>
+    <div class="fallback">Si el sistema no carga dentro de la app, <a href="https://script.google.com/macros/s/AKfycbwolpBlnBeiigvl4c7FS8hH96w1rchFKJMVlsaQPWga0neu7wEZbEtIJaJ48SMcRh84/exec">ábrelo aquí</a>.</div>
+  </div>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js"));
+    }
+  </script>
+</body>
+</html>
